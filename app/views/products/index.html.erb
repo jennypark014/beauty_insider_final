@@ -22,7 +22,13 @@
 
       <% @products.each do |product| %>
       <tr>
-        <td><%= product.brand.name %></td>
+        <td>
+          <% if product.brand.present? %>
+            <a href="/brands/<%= product.brand.id %>">
+              <%= product.brand.name %>
+            </a>
+          <% end %>
+        </td>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
