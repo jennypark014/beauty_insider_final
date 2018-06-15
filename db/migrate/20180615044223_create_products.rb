@@ -4,7 +4,6 @@ class CreateProducts < ActiveRecord::Migration
       t.integer :brand_id
       t.string :name
       t.string :description
-      t.string :image_url
       t.string :benefits
       t.string :price
       t.string :comments

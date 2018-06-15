@@ -39,11 +39,6 @@
   </div>
 
 <div class="form-group">
-    <%= f.label :image_url_cont, "Image url contains" %>
-    <%= f.text_field :image_url_cont, :class => "form-control", :placeholder => "Image url contains" %>
-  </div>
-
-<div class="form-group">
     <%= f.label :description_cont, "Description contains" %>
     <%= f.text_field :description_cont, :class => "form-control", :placeholder => "Description contains" %>
   </div>
@@ -115,7 +110,6 @@
         <th>Brand</th>
         <th>Name</th>
         <th>Description</th>
-        <th>Image url</th>
         <th>Benefits</th>
         <th>Price</th>
         <th>Comments</th>
@@ -134,7 +128,6 @@
         </td>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
         <td><%= product.benefits %></td>
         <td><%= product.price %></td>
         <td><%= product.comments %></td>

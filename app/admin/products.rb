@@ -1,6 +1,6 @@
 ActiveAdmin.register Product do
 
- permit_params :brand_id, :name, :description, :image_url, :benefits, :price, :comments, :purchased
+ permit_params :brand_id, :name, :description, :benefits, :price, :comments, :purchased
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
